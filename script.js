@@ -21,11 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const signUpPanel   = document.getElementById('signUpPanel');
   const tabSignIn     = document.getElementById('tabSignIn');
   const tabSignUp     = document.getElementById('tabSignUp');
-  const desktopToSignIn = document.getElementById('desktopToSignIn');
-  const desktopToSignUp = document.getElementById('desktopToSignUp');
+
   const toSignUp      = document.getElementById('toSignUp');  // mobile switch link in sign-in form
   const toSignIn      = document.getElementById('toSignIn');  // mobile switch link in sign-up form
-
+  
+  // Desktop toggle buttons
+  const desktopToSignUp = document.getElementById('desktopToSignUp');
+  const desktopToSignIn = document.getElementById('desktopToSignIn');
 
   /* ============================================================
      CUSTOM CURSOR (desktop only)
@@ -134,9 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  /* ============================================================
-     MODAL — OPEN / CLOSE
-     ============================================================ */
   function isMobile() { return window.innerWidth <= 768; }
 
   function openModal(showSignup = false) {
